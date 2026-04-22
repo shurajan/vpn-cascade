@@ -47,7 +47,7 @@ chmod +x install.sh
 
 Скрипт автоматически:
 - Включит IP Forwarding
-- Настроит правила iptables
+- Настроит правила nftables
 - Сохранит правила (переживут перезагрузку)
 
 ---
@@ -55,13 +55,3 @@ chmod +x install.sh
 ## Настройка клиента
 
 После запуска скрипта в приложении клиента (WireGuard, AmneziaWG, VLESS и т.д.) замените только IP-адрес **Удаленного VPS** на IP этого **Промежуточного VPS**. Порт и остальные настройки не трогайте.
-
----
-
-## Удаление правил
-
-```bash
-iptables -t nat -F
-iptables -F FORWARD
-netfilter-persistent save
-```
