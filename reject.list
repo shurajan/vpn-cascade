@@ -55,5 +55,7 @@ DOMAIN-SUFFIX,vungle.com
 DOMAIN-SUFFIX,deputizepacifistwipe.com
 DOMAIN-SUFFIX,acquiredeceasedundress.com
 DOMAIN-SUFFIX,holahupa.com
+DOMAIN-SUFFIX,capndr.com
+DOMAIN-SUFFIX,wpadmngr.com
 
 URL-REGEX,^https?://.+/videos1234/other/.+
